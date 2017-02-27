@@ -4,26 +4,14 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.chuumong.transitionactivity.MainActivity">
-
-    <ImageView
-        android:id="@+id/image_marshmallow"
-        android:layout_width="150dp"
-        android:layout_height="90dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/marshmallow"
-        android:transitionName="@string/marshmallow_transition" />
+    android:padding="@dimen/activity_vertical_margin">
 
     <Button
-        android:id="@+id/btn_transition"
+        android:id="@+id/btn_activity_to"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
-        android:text="marshmallow" />
+        android:text="Activity To Activity" />
+
 
 </RelativeLayout>
