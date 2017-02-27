@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import io.chuumong.transitionactivity.ui.activity.ActivityToActivity;
+import io.chuumong.transitionactivity.ui.activity.FragmentToActivity;
 import io.chuumong.transitionactivity.ui.activity.SharedActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.btn_activity_to).setOnClickListener(this);
+        findViewById(R.id.btn_fragment_to).setOnClickListener(this);
     }
 
     @Override
@@ -24,6 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn_activity_to:
                 ActivityToActivity.start(this);
+                break;
+            case R.id.btn_fragment_to:
+                FragmentToActivity.start(this);
                 break;
         }
     }
